@@ -14,20 +14,20 @@
 	</style>
 </head>
 <body>
-	<h1>Witaj</h1>
-	<p>Wpisz swoje imię i naciśnij OK</p>
+	<h1>Hello</h1>
+	<p>Please type your username and push the button</p>
 	<form action="#">
-		<label for="name">Podaj swoje imię</label>
+		<label for="NameInput">Username</label>
 		<input type="text" name="name" id="NameInput">
 		<button id="OK">OK</button>
 	</form>
-	<p id="Greeting" class="greeting">Witaj, użytkowniku: <span id="Name"></span></p>
+	<p id="Greeting" class="greeting">Hello, username: <span id="Name"></span></p>
 	<script>
 		(function(){
-			var nameInput = document.getElementById('NameInput');
-			var name = document.getElementById('Name');
-			var greeting = document.getElementById('Greeting');
-			var okBtn = document.getElementById('OK');
+			const nameInput = document.getElementById('NameInput');
+			const name = document.getElementById('Name');
+			const greeting = document.getElementById('Greeting');
+			const okBtn = document.getElementById('OK');
 			
 			okBtn.addEventListener('click', function(e){
 				e.preventDefault();

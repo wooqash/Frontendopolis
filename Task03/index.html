@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 03</title>
+	<link rel="stylesheet" href="../css/normalize.css">
+	<style>
+		.results{
+			display: none;
+		}
+		.results.show{
+			display: block;
+		}
+		.error-msg{
+			color: #ff0000;
+		}
+	</style>
+</head>
+<body>
+	<p>Type two numbers and push the 'OK' button or get a two numbers automaticly (from range 1-20) by pushing the 'Random' button</p>
+	<form action="#">
+		<div>
+			<label for="Numb1">Number 1</label>
+			<input type="number" name="numb1" id="Numb1">
+			<span class="error-msg"></span>
+		</div>
+		<div>
+			<label for="Numb2">Number 2</label>
+			<input type="number" name="numb1" id="Numb2">
+			<span class="error-msg"></span>
+		</div>
+		<button id="OkBtn">OK</button>
+		<button id="RandomBtn">Random</button>
+	</form>
+	<ul id="Results" class="results">
+		<li>Result of addition(+): <span id="ResultOfAdd"></span></li>
+		<li>Result of substraction(-): <span id="ResultOfSub"></span></li>
+		<li>Result of multiplication(*): <span id="ResultOfMuli"></span></li>
+		<li>Result of division(/): <span id="ResultOfDiv"></span></li>
+		<li>Result of rest from division(%): <span id="ResultOfMod"></span></li>
+	</ul>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
